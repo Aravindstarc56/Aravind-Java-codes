@@ -19,3 +19,45 @@ class grade{
 }
 
 
+NESTED IF EXAMPLE:
+import java.util.Scanner;
+class married {
+  /*A company insures its drivers in the following cases:
+      a) if the driver is married
+      b) if the driver is unmarried, male and above 30 years of age
+      c) if the driver is unmarried, female and above 25 years of age
+      */
+    
+    public static void main (String args[]) {
+    Scanner in = new Scanner(System.in);
+    System.out.println("Enter your Marital status M/U : ");
+    char marital = in.next().charAt(0);
+    if(marital=='U' || marital=='u' ) 
+    {
+        System.out.println("Enter your Gender M/F : ");
+        char gender=in.next().charAt(0);
+        System.out.println("Enter your Age : ");
+        int age = in.nextInt();
+        if((gender == 'M' || gender == 'm') && age >= 30) 
+        {
+            System.out.println("You are eligible for Insurance");
+        } 
+        else if((gender == 'F' || gender == 'f') && age >= 25) 
+        {
+            System.out.println("You are eligible for Insurance");
+        } 
+        else 
+        {
+            System.out.println("You are not eligible for Insurance");
+        } 
+    }    
+        else if(marital == 'M' || marital == 'm')
+        {
+            System.out.println("You are eligible for Insurance");
+        }
+        else
+        {
+            System.out.println("Invalid Input");
+        }
+        }
+    }
