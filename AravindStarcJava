@@ -134,3 +134,25 @@ class group {
         }
     }
 }
+
+WHILE LOOP EXAMPLE
+
+import java.util.Scanner;
+class While {
+    public static void main (String args[]) {
+        System.out.println("Enter the Limit :");
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();//the value from the user was stored in n
+        /* 3 main steps:
+          1.Initialization
+          2.Condition checking
+          3.,increment or decrement */
+        
+        int i = 1;//to start a loop first step was intialization for that i was assigning the value 1 to the variable i //
+        while (i<=n)//checking the condition, i was put the number of times in 'n' so that how many times that the loop is going to run//
+        {
+            System.out.println(i);//if the above condition true means it will comes inside the while condition and prints 'i'//
+            i++;//once the above printing finished i want another number so i declared i++//
+        }
+    }
+}
