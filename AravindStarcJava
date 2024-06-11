@@ -103,3 +103,34 @@ class Switch {
         }
     }
 }
+
+GROUP SWITCH STATEMENT
+
+import java.util.Scanner;
+class group {
+    public static void main (String args[]) {
+        char c;//declaring a character variable//
+        System.out.println("Enter the character :");//asking the character from user//
+        Scanner in = new Scanner (System.in);//scan and store the character asked from the user
+        c = in.next().charAt(0);//to store the first  letter of a word
+        switch (c)//passing the character in to the switch condition
+        {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+            case 'A':
+            case 'E':
+            case 'I':
+            case 'O':
+            case 'U':
+                System.out.println(c+ " is a vowel");
+                break;
+            default :
+                System.out.println(c+ " is a consonant");
+                break;
+            
+        }
+    }
+}
