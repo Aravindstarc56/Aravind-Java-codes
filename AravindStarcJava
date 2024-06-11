@@ -20,6 +20,7 @@ class grade{
 
 
 NESTED IF EXAMPLE:
+
 import java.util.Scanner;
 class married {
   /*A company insures its drivers in the following cases:
@@ -61,3 +62,44 @@ class married {
         }
         }
     }
+
+
+SWITCH CONDITION EXAMPLE
+
+import java.util.Scanner;
+class Switch {
+    public static void main (String args[]) {
+        int a,b,c,ch; // ch-to input the choice or switch case, here we declared 3 variables//
+        System.out.println("1.Addition ");
+        System.out.println("2.Subtraction ");
+        System.out.println("3.Multiplication ");
+        System.out.println("4.Division ");
+        System.out.println("Enter your choice : ");//above are the printing statement based on our condition and choice//
+        Scanner in = new Scanner(System.in);//once after the printing statement we use scanner to scan and get input from the user//
+        ch = in.nextInt();
+        System.out.println("Enter 2 Nos : ");//getting the 2 no as input from the user//
+        a = in.nextInt();
+        b = in.nextInt();
+        switch (ch) //passing the ch in to switch condition//
+        {
+            case 1:
+                c=a+b;
+                System.out.println("1.Addition : "+c);
+                break;
+            case 2:
+                c=a-b;
+                System.out.println("2.Subtraction : "+c);
+                break;
+            case 3:
+                c=a*b;
+                System.out.println("3.Multiplication : "+c);
+                break;
+            case 4:
+                c=a/b;
+                System.out.println("4.Division : "+c);
+                break;
+            default:
+                System.out.println("Invalid Choice Selection");
+        }
+    }
+}
