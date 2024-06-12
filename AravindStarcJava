@@ -156,3 +156,21 @@ class While {
         }
     }
 }
+
+
+DO WHILE EXAMPLE
+
+import java.util.Scanner;
+class Do_While {
+    public static void main (String args[]) {
+        System.out.println("Enter the Limit :");
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int i = 1;
+        //do the work inside the do condition first and then check the while condition//
+        do {
+            System.out.println(i);
+            i++;
+        } while (i<=n);//the above loop will end only after checking the while condition//
+        }
+}
