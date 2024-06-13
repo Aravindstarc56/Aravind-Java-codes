@@ -191,3 +191,19 @@ class Do_While {
         } while (i<=n);//the above loop will end only after checking the while condition//
         }
 }
+
+FOR LOOP CONDITION 
+
+import java.util.Scanner;
+class For_loop {
+    public static void main (String args[]) {
+        System.out.println("Enter the limit : ");
+        Scanner in = new Scanner (System.in);
+        int n = in.nextInt();
+        //in for loop the initialization,condition checking and the increment and the decrement steps were performed in the same line //
+        for (int i=1;i<=n;i++)
+        {
+            System.out.println(i);
+        }
+    }
+}
