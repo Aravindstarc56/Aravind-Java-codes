@@ -207,3 +207,17 @@ class For_loop {
         }
     }
 }
+
+
+ENHANCED FOR LOOP 
+
+import java.util.Scanner;
+class Enhanced_Forloop {
+    public static void main (String args[]) {
+        int numbers[] = {10,20,30,40,50,60,70};
+        for (int n: numbers)//it takes the value from the array(numbers) and stores it one by one in 'n'//
+        {
+            System.out.println(n);
+        }
+    }
+}
