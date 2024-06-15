@@ -271,5 +271,22 @@ class Break_Continue {
         }
     }
 }    
+
+TO FIND FACTORIAL OF A GIVEN NUMBER
+
+import java.util.Scanner;
+class Factorial {
+    public static void main (String args[]) {
+        Scanner in = new Scanner(System.in);//getting a data input from user//
+        System.out.println("Enter the number :");//getting a data input from user//
+        int n = in.nextInt();//storing the number given by the user in integer n//
+        int f=1;//declaring f=1 for the factorial purpose
+        for(int i=1;i<=n;i++)//once this loop is true it enters inside
+        {
+            f=f*i;//1<=5 is true and it enters inside and here 'f' value is 1 and 'i' value is 1 so 1*1 is 1 and then 1 was stored in f//
+        }
+        System.out.println("Factorial of "+n+" is "+f );
+    }
+}
      
      
