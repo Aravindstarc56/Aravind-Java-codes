@@ -255,5 +255,21 @@ class nested_Forloop {
         }
     }
 }
+
+BREAK AND CONTINUE STATEMENT
+
+import java.util.Scanner;
+class Break_Continue {
+    public static void main (String args []) {
+        for (int i=1; i<=10; i++) 
+        {
+            if (i==5) 
+            continue;//doesnot prints 5 and prints the numbers after 5//
+        System.out.println(i); 
+        if (i==8)
+        break;//stops when 8 was printed and no other values after 8 was not printed//
+        }
+    }
+}    
      
      
