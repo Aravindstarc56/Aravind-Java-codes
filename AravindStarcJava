@@ -288,5 +288,43 @@ class Factorial {
         System.out.println("Factorial of "+n+" is "+f );
     }
 }
-     
+
+The below program accepts N numbers as input and stores them in the int Array values. 
+Fill in the missing lines of code so that the program iterates over the N values and populates their sum in the variable total.
+import java.util.Scanner;
+
+public class SumArray {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        
+        // Accept the number of values N
+        System.out.print("Enter the number of values: ");
+        int N = in.nextInt();
+        
+        // Declare an array to store the values
+        int[] values = new int[N];
+        
+        // Accept N values from the user
+        System.out.println("Enter the values:");
+        for (int i = 0; i < N; i++) {
+            values[i] = in.nextInt();
+        }
+        
+        // Initialize the total variable to store the sum
+        int total = 0;
+        
+        // Iterate over the array and sum up the values
+        for (int i = 0; i < N; i++) {
+            total += values[i];
+        }
+        
+        // Print the total sum
+        System.out.println("The total sum is: " + total);
+        
+       
+    }
+}
+
+
+
      
