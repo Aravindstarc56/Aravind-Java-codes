@@ -325,6 +325,26 @@ public class SumArray {
     }
 }
 
+WRITE A PROGRAM TO FIND THE SUM AND AVERAGE OF A GIVEN N NUMBERS
 
+import java.util.Scanner;
+public class Sum_average {
+    //WRITE A PROGRAM TO FIND THE SUM AND AVERAGE OF A GIVEN N NUMBERS
+    public static void main(String args[]) {
+        Scanner in  = new Scanner(System.in);
+        System.out.println("Enter the Limit:");//getting the data from the user//
+        int n = in.nextInt();//storing the limit given by the user in 'n'//
+        int sum = 0;//declaring a variable for sum// here why i declared sum=0 means if number comes by one by one means i want it to add in sum, if we declared the initial value as '0' means it is easy to add//
+        int a;
+        for (int i=1;i<=n;i++) 
+        {
+            System.out.println("Enter the number "+i+" :");//when the above loop was running and if i want the 5 numbers as input, so i declared here//
+            a=in.nextInt();//when user giving the values as one by one, i stored it in a//
+            sum+=a;//sum=sum+a//while the loop was running and when we were giving the new numbers as input we add it in sum and store it
+        }
+        System.out.println("The sum of given numbers is : "+sum);
+        System.out.println("The Average of given numbers is: "+sum/n);
+    }
+}
 
      
