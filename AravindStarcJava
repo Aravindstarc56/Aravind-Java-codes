@@ -347,4 +347,23 @@ public class Sum_average {
     }
 }
 
-     
+WRITE A PROGRAM TO FIND THE FIBONACCI SERIES OF A GIVEN NUMBER
+
+import java.util.Scanner;
+public class Fibonacci {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the number: ");//getting limit from user
+        int n = in.nextInt();//storing the limit in 'n'
+        int a=-1;//a trick for fibonacci
+        int b=1;
+        int c;
+        for (int i=1;i<=n;i++)//runs n times and comes inside if the condition is true
+        {
+            c=a+b;//-1+1=0;1+0=1;
+            System.out.println(c);
+            a=b;//1  0 
+            b=c;//0  1
+        }
+        }
+    }
