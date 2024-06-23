@@ -418,6 +418,37 @@ public class Amstrong_number
         else
         {
             System.out.println(number  +  "is not an armstrong number");
+}
+
+
+WRITE A PROGRAM TO FIND THE ARMSTRONG NUMBER BETWEEN 100 AND 999
+
+import java.util.Scanner;
+public class Armstromg_Number {
+    public static void main(String args[]) 
+    {
+        Scanner in  = new Scanner(System.in);
+        int digit1,digit2,digit3;
+        int temp;
+        int number;
+        int result;
+        for (number=100;number<=999;number++)
+        {
+            temp=number;
+            digit3 = temp%10;
+            temp = temp/10;
+            
+            digit2 = temp%10;
+            temp = temp/10;
+            
+            digit1 = temp%10;
+            result = (digit1*digit1*digit1) + (digit2*digit2*digit2) + 
+            (digit3*digit3*digit3);
+            if (number==result)
+            {
+                System.out.println(number +"is a armstrong number");
+            }
+            
         }
-      }
+    }
 }
