@@ -452,3 +452,21 @@ public class Armstromg_Number {
         }
     }
 }
+
+WRITE A PROGRAM TO PRINT THE MULTPLICATION TABLES
+
+import java.util.Scanner;
+public class Multiplication {
+    public static void main(String args[])
+    {
+    Scanner in = new Scanner(System.in);
+    System.out.println("Enter the table :");//getting the table no from user
+    int t = in.nextInt();//storing the table in the integer 't'
+    System.out.println("Enter the limit :");//getting the table limit from user
+    int n = in.nextInt();//storing the table limit in the integer 'n'
+    for(int i=1;i<=n;i++) //this loop runs based on the limit that we give
+    {
+        System.out.println(t + " x " + i + " = " + ( t * i ));//table format
+    }
+}
+}
