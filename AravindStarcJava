@@ -470,3 +470,23 @@ public class Multiplication {
     }
 }
 }
+
+WRITE A PROGRAM TO FIND THE FACTORIAL OF A GIVEN NUMBER
+
+import java.util.Scanner;
+public class Factor {
+    public static void main(String args[])
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the Number:");//getting the number from the user
+        int n = in.nextInt();//storing the number in variable 'n'
+        for(int i=1;i<=n;i++)//runs 'n' times
+        {
+            if(n%i==0)//if the given number was modulus by the 'i' and if it becomes remainder 0 means it is the factor of that number  
+            
+            {
+                System.out.print(i);
+            }
+        }
+    }
+}
