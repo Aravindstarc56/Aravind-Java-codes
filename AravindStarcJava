@@ -601,3 +601,39 @@ public class strong {
         }
     }
 }
+
+ARRAYS IN JAVA
+
+import java.util.Scanner;
+public class even_odd {
+    public static void main (String args[])
+    {
+        int e=0,o=0;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the limit:");
+        int n = in.nextInt();//declare the variable and store the limit in the array//
+        int a[] = new int[n];//it stores all the numbers given by the users//
+        for (int i=0;i<n;i++)
+        {
+            System.out.println("Enter a["+i+"] value:");
+            a[i] = in.nextInt();
+        }
+        for (int element:a)
+        {
+            if (element%2==0)
+            
+            {
+                e++;
+            }
+            else 
+            {
+                o++;
+            }
+        }
+        System.out.println("Total Even nos :"+e);
+        System.out.println("Total odd nos :"+o);
+        
+        
+    }    
+    }
+
