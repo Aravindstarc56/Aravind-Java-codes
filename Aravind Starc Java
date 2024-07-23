@@ -721,3 +721,26 @@ public class swap {
         System.out.println("After swap :"+b);
     }
 }
+
+PROGRAM TO SWAP NUMBERS WITHOUT USING THIRD VARIABLE
+
+import java.util.Scanner;
+public class swap {
+    public static void main (String args[])
+    {
+        System.out.println("Enter two numbers :");
+        Scanner in = new Scanner(System.in);
+        int a,b;
+        a=3;b=4;
+        a = in.nextInt();
+        b = in.nextInt();
+        System.out.println("Before swap :"+a);
+        System.out.println("Before swap :"+b);
+        //logic to swap the two numbers without using the third variable//
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("After swap :"+a);
+        System.out.println("After swap :"+b);
+    }
+}
