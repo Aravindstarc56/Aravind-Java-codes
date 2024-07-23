@@ -699,3 +699,25 @@ public class duplicate {
     }
 }
 
+PROGRAM FOR SWAPPING OF TWO NUMBERS
+
+import java.util.Scanner;
+public class swap {
+    public static void main (String args[])
+    {
+        
+        Scanner in = new Scanner(System.in);
+        int a,b,temp;
+        a=3;b=4;
+        a = in.nextInt();
+        b = in.nextInt();
+        System.out.println("Before swap :"+a);
+        System.out.println("Before swap :"+b);
+        
+        temp=a;
+        a=b;
+        b=temp;
+        System.out.println("After swap :"+a);
+        System.out.println("After swap :"+b);
+    }
+}
