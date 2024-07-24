@@ -744,3 +744,28 @@ public class swap {
         System.out.println("After swap :"+b);
     }
 }
+
+PROGRAM TO CONVERT DECIMAL INTO BINARY
+
+import java.util.Scanner;
+public class Binary {
+    public static void main (String args[])
+    {
+        System.out.print("Enter the binary number:");
+        Scanner in = new Scanner(System.in);
+        int binary[] = new int[100];//declaring array and defining its size//
+        int number,i=0;//declaring the variables//
+        number = in.nextInt();//storing the number input as integer//
+        while (number!=0)//loop starts when number is not in 0//
+        {
+            binary[i] = number%2;
+            number = number/2;
+            i++;
+        }
+        System.out.print("Binary value is :");
+        for (int j=i-1;j>=0;j--)
+        {
+            System.out.print(""+binary[j]);
+        }
+    }
+}//IF ANY QUERY OR DOUBT MEANS REFER IN NOTE FOR REVERSE OF N DIGIT PROGRAM
