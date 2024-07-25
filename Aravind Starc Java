@@ -769,3 +769,30 @@ public class Binary {
         }
     }
 }//IF ANY QUERY OR DOUBT MEANS REFER IN NOTE FOR REVERSE OF N DIGIT PROGRAM
+
+WRITE A PROGRAM TO CONVERT THE DECIMAL NUMBER INTO OCTAL NUMBER
+
+import java.util.Scanner;
+public class Octal {
+    public static void main (String args[])
+    {
+        System.out.print("Enter the Number: ");
+        Scanner in = new Scanner(System.in);
+        int octal[] = new int[100];
+        int number,i=0;;
+       
+        number = in.nextInt();
+        while (number!=0)
+        {
+            octal[i] = number%8;
+            number = number/8;
+            i++;
+        }
+        System.out.print("The octal value is : ");
+        for (int j=i-1;j>=0;j--)
+        {
+            System.out.print(""+octal[j]);
+        }
+    }
+    
+}
