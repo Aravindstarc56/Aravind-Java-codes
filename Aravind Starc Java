@@ -823,3 +823,27 @@ public class Hex {
     }
     
 }
+
+PROGRAM TO CONVERT THE OCTAL NUMBER IN TO DECIMAL NUMBER
+
+import java.util.*;
+class helloworld {
+    public static void main (String args[])
+    {
+        System.out.println("Enter the octal number :");
+        Scanner in = new Scanner(System.in);
+        int Octal = in.nextInt();
+        int decimal = 0;
+        int number = 0;
+        while (Octal>0)
+        {
+            int temp = Octal%10;
+            decimal+=temp*Math.pow(8,number);
+            Octal = Octal/10;
+            number++;
+        }
+        System.out.println("Decimal Number is: "+decimal);
+    
+    }
+    
+}
