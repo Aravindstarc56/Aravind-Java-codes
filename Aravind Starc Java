@@ -869,3 +869,41 @@ public class jagged {
     
 }
 }
+
+PROGRAM TO SWAP TWO ARRAYS
+
+import java.util.Arrays;
+
+public class Swap {
+    public static void main(String[] args) {
+        int[] a = {1, 2, 3, 4, 5};
+        int[] b = {6, 7, 8, 9, 10};
+
+        // Print arrays before swap
+        System.out.println("Before swap:");
+        System.out.println("a = " + Arrays.toString(a));
+        System.out.println("b = " + Arrays.toString(b));
+
+        // Swap the arrays
+        swapArrays(a, b);
+
+        // Print arrays after swap
+        System.out.println("\nAfter swap:");
+        System.out.println("a = " + Arrays.toString(a));
+        System.out.println("b = " + Arrays.toString(b));
+    }
+
+    // Function to swap elements of two arrays
+    public static void swapArrays(int[] a, int[] b) {
+        if (a.length != b.length) {
+            System.out.println("Arrays must have the same length to be swapped.");
+            return;
+        }
+
+        for (int i = 0; i < a.length; i++) {
+            int temp = a[i];
+            a[i] = b[i];
+            b[i] = temp;
+        }
+    }
+}
