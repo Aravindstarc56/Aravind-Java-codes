@@ -934,3 +934,21 @@ public static void main(String args[])
 }
     
 }
+
+
+PROGRAM TO COUNT THE NUMBER OF DIGITS
+
+import java.util.*;
+public class Count {
+    public static void main(String args[])
+    {
+        int num=123;
+        int count=0;
+        while (num>0)
+        {
+            count++;//it increments the count until the value becomes 0 and counts the incremet upto 0//
+            num=num/10;
+        }
+        System.out.println(" number of digits in the given num is "+count);
+    }
+}
