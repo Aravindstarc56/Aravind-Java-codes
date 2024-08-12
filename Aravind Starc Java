@@ -952,3 +952,23 @@ public class Count {
         System.out.println(" number of digits in the given num is "+count);
     }
 }
+
+PROGRAM TO COUNT THE SUM OF DIGITS
+
+import java.util.*;
+public class Solution {
+    public static void main(String args[])
+    {
+        int num=1234;
+        int count=0;
+        int sum=0;
+        while (num>0)
+        {
+          
+            int n = num%10;
+            sum=sum+n;
+            num=num/10;
+        }
+        System.out.println("The sum is "+sum);
+    }
+}
