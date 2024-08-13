@@ -972,3 +972,23 @@ public class Solution {
         System.out.println("The sum is "+sum);
     }
 }
+
+
+PROGRAM TO SWAP TWO NUMBERS WITHOUT USING THIRD VARIABLE
+
+import java.util.*;
+public class Sample {
+    public static void main(String args[])
+    {
+        int a,b;
+        a=10;
+        b=20;
+        System.out.println("Before swapping a is " +a);
+        System.out.println("Before swapping b is " +b);
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("After swapping a is " +a);
+        System.out.println("After swapping b is " +b);
+    }
+}
