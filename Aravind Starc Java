@@ -1033,3 +1033,35 @@ public class Main
     
 }
 }
+
+PROGRAM TO FIND THE MISSING POSITIVE INTEGER IN AN ARRAY
+
+import java.util.*;
+public class Main
+{
+    public static int findSmallestPositiveinteger (int[] nums)
+    {
+        Arrays.sort(nums);
+        int smallestMissing = 1;
+        for (int num: nums)
+        {
+            smallestMissing++;
+        }
+        return smallestMissing;
+        
+    }
+    public static void main(String args[])
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the Numbers: ");
+        int n = in.nextInt();
+        int[] nums = new int[n];
+        for (int i=1;i<n;i++)
+        {
+            nums[i] = in.nextInt();
+        }
+        System.out.println(findSmallestPositiveinteger(nums));
+    }
+    
+}
+
