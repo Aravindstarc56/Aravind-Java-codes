@@ -1172,4 +1172,23 @@ public class Main {
         System.out.println("The number of digits in the number is " + count);
         
     }
+}  
+
+
+       (OR)
+import java.util.*;
+public class Main {
+    public static void main(String args[])
+    {
+       
+        int n = 1234;
+        int count = 0;
+        while (n>0)
+        {
+            count++;
+            n/=10;
+        }
+        System.out.println("The number of digits in the number is " + count);
+        
+    }
 }
