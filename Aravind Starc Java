@@ -1192,3 +1192,23 @@ public class Main {
         
     }
 }
+
+PROGRAM TO COUNT THE SUM OF THE DIGITS IN THE NUMBER
+
+import java.util.*;
+public class Main {
+    public static void main(String args[])
+    {
+       
+        int n = 1234;
+        int sum = 0;
+        while (n>0)
+        {
+            int num = n%10;
+            sum+=num;
+            n/=10;
+        }
+        System.out.println("The sum of digits in the number is " + sum);
+        
+    }
+}
