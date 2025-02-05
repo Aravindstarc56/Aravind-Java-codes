@@ -1127,4 +1127,29 @@ public class Main {
         }
     }
 }
+
+PROGRAM TO CHECK WHETHER THE GIVEN NUMBER IS PALINDROME OR NOT
+
+import java.util.*;
+public class Main {
+    public static void main(String args[])
+    {
+        int n = 13261;
+        int temp = n;
+        int rev = 0;
+        while (n>0)
+        {
+            int num = n%10;
+            rev = (rev*10)+num;
+            n/=10;
+        }
+        if(temp == rev)
+        {
+            System.out.println("The number is Palindrome Number");
+        }
+        else {
+            System.out.println("The number is not a Palindrome Number");
+        }
+    }
+}
  
