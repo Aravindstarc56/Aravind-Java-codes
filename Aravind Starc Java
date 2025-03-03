@@ -1302,3 +1302,24 @@ public class Main {
     }
    
 }
+
+FIND THE SECOND LARGEST ELEMENT OF 4 NUMBERS
+
+import java.util.*;
+public class Main {
+    public static void main(String args[])
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter the three Numbers:");
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c = in.nextInt();
+        int d = in.nextInt();
+        int[] arr = {a,b,c,d};
+        Arrays.sort(arr);
+        System.out.println("The Second Largest Number is " + arr[2]);
+        
+         
+    }
+   
+}
