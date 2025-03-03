@@ -1271,3 +1271,34 @@ public class Main {
         }
     }
 }
+
+SECOND LARGEST ELEMENT
+
+import java.util.*;
+public class Main {
+    public static void main(String args[])
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter the three Numbers:");
+        int a = in.nextInt();
+        int b = in.nextInt();
+        int c = in.nextInt();
+        int SecondLargest;
+        if((a>b && a<c) || (a<b && a>c))
+        {
+            SecondLargest = a;
+        }
+        else if ((b>a && b<c) || (b<a && b>c))
+        {
+            SecondLargest = b;
+        }
+        else 
+        {
+            SecondLargest = c;
+        }
+        System.out.println("The Second largest element is "  + SecondLargest);
+    
+         
+    }
+   
+}
