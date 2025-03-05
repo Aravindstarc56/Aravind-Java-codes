@@ -1365,3 +1365,40 @@ public class Main {
     }
    
 }
+
+
+import java.util.*;
+public class Main {
+    public static void main(String args[])
+    {
+        // Scanner in = new Scanner(System.in);
+        // System.out.println("Enter the elements:");
+        int[] arr = {16,17,4,3,5,2,16,7,8,0};
+        int [] a= new int [10];
+        int x=0;
+        for(int i=0;i<arr.length-1;i++)
+        {
+            int c=0;
+            for(int j=i+1;j<arr.length;j++)
+            {
+                if(arr[i] < arr[j])
+                {
+                    break;
+                }
+                c=j;
+            }
+            if(c==arr.length-1)
+            {
+                a[x++]=arr[i];
+            }
+            
+        }
+        a[x++]=arr[arr.length-1];
+        for (int i=0;i<x;i++)
+        {
+            System.out.println(a[i]);
+        }
+        
+        
+    }
+}
